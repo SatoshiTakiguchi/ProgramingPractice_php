@@ -51,9 +51,10 @@ $momo = new Fruits("桃",15,200,300);
 $ichigo = new Fruits("イチゴ",15,400,500);
 $momo->getStatistics();
 $ichigo->getStatistics();
-echo "\nおまけ\n";
-$momo->setName("momo");
-$momo->reCreate(2,100,200);
-$momo->getStatistics();
+
+// echo "\nおまけ\n";
+// $momo->setName("momo");
+// $momo->reCreate(2,100,200);
+// $momo->getStatistics();
 
 ?>

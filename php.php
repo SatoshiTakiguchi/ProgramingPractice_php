@@ -3,8 +3,8 @@
 
 class Fruits
 {
-    public $name;
-    public $price = [];
+    private $name;
+    private $price = [];
     
     // 初期化
     public function __construct($name,$num,$min_price,$max_price){

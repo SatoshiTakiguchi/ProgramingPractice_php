@@ -13,7 +13,7 @@ class Shops{
         }
     }
 
-    // 入力と商品名が一致する商品リスト取得
+    // 商品リスト取得
     public function getProductList($name=null){
         // 入力がなければすべての商品リストを返す
         if(!$name){
@@ -29,7 +29,7 @@ class Shops{
         }
         return $res_list;
     }
-    // 入力と商品名が一致する値段のみのリスト取得
+    // 値段のみのリスト取得
     public function getPriceList($name=null){
         $product_list = $this->getProductList($name);
         $res_list = [];
@@ -40,17 +40,17 @@ class Shops{
         return $res_list;
     }
 
-    // 商品名ごとの最高値取得
+    // 最高値取得
     public function maxPrice($name=null){
         $price_list = $this->getPriceList($name);
         return max($price_list);
     }
-    // 商品名ごとの最安値取得
+    // 最安値取得
     public function minPrice($name=null){
         $price_list = $this->getPriceList($name);
         return min($price_list);
     }
-    // 商品名ごとの平均価格取得
+    // 平均価格取得
     public function avePrice($name=null){
         $price_list = $this->getPriceList($name);
         return round(array_sum($price_list)/count($price_list));

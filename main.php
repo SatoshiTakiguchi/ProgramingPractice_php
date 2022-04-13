@@ -1,17 +1,17 @@
 
 <?php
-require 'Fruits.php';
+require 'Products.php';
 require 'Shops.php';   
 
 // 桃作成
 $momo_list = [];
 for($i = 0; $i < 15; $i++){
-    $momo_list[] = new Fruits("桃",mt_rand(200,300));
+    $momo_list[] = new Products("桃",mt_rand(200,300));
 }
 // イチゴ作成
 $ichigo_list = [];
 for($i = 0; $i < 15; $i++){
-    $ichigo_list[] = new Fruits("イチゴ",mt_rand(300,400));
+    $ichigo_list[] = new Products("イチゴ",mt_rand(300,400));
 }
 
 // 店作成

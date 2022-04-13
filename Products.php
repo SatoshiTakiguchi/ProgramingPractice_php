@@ -1,5 +1,5 @@
 <?php
-class Fruits{
+class Products{
     protected $name;
     protected $price;
     
